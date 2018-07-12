@@ -1,0 +1,10 @@
+---
+applications:
+- name: config-client-dev
+  host: config-client-dev
+  memory: 1G
+  path: target/config-client-0.0.1-SNAPSHOT.jar
+  services:
+  - config-server-sample
+  env:
+    SPRING_PROFILES_ACTIVE: dev
