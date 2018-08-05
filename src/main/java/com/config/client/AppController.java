@@ -9,14 +9,17 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class AppController {
 
-	@Value("${message}")
+	@Value("${message:m}")
 	private String message;
 	
-	@Value("${environnment}")
+	@Value("${environnment:e}")
 	private String environment;
+	
+	@Value("${vcap.application.instance_index:-1}")
+	private String instanceIndex;
 
 	@RequestMapping("/message")
 	public String getMessage() {
-		return this.message + " Environment :: "+ this.environment;
+		return this.message + " | Environment :: "+ this.environment + "| Instance Index " + instanceIndex;
 	}
 }
