@@ -1,7 +1,7 @@
 ---
 applications:
-- name: config-client-dev-15
-  host: config-client-dev-15
+- name: config-client-dev-15-mq
+  host: config-client-dev-15-mq
   memory: 1G
   path: target/config-client-1-5-amqp-0.0.1-SNAPSHOT.jar
   services:
