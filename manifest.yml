@@ -1,9 +1,9 @@
 ---
 applications:
-- name: config-client-dev-2
-  host: config-client-dev
+- name: config-client-dev-15
+  host: config-client-dev-15
   memory: 1G
-  path: target/config-client-0.0.1-SNAPSHOT.jar
+  path: target/config-client-1-5-0.0.1-SNAPSHOT.jar
   services:
   - config-server-sample
   env:
